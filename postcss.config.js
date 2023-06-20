@@ -1,9 +1,5 @@
-const purgecss = require('@fullhuman/postcss-purgecss')
+import purgeCSSPlugin from "@fullhuman/postcss-purgecss";
 
-module.exports = {
-  plugins: [
-    purgecss({
-      content: ["./pages/**/*"],
-    }),
-  ],
+export default {
+  // plugins: [purgeCSSPlugin({ content: ["./pages/**/*", "./index.html"] })],
 };
